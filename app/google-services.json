@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "365082335515",
+    "firebase_url": "https://androidwebapp-b6fa5.firebaseio.com",
+    "project_id": "androidwebapp-b6fa5",
+    "storage_bucket": "androidwebapp-b6fa5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365082335515:android:19fe03516052602d3f5bbe",
+        "android_client_info": {
+          "package_name": "com.supercoders.webapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365082335515-sc4glplfl3l39v4gdk5onh2ceooeoabo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfWiR7Syx1Gjr_MvauTAhXi1sx7oHagdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365082335515-sc4glplfl3l39v4gdk5onh2ceooeoabo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
