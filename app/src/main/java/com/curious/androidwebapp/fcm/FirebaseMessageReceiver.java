@@ -1,4 +1,4 @@
-package com.example.androidwebapp.fcm;
+package com.curious.androidwebapp.fcm;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -12,10 +12,9 @@ import android.widget.RemoteViews;
 
 import androidx.core.app.NotificationCompat;
 
-import com.example.androidwebapp.R;
+import com.curious.androidwebapp.R;
 
-import com.example.androidwebapp.SplashScreen;
-import com.google.firebase.messaging.FirebaseMessaging;
+import com.curious.androidwebapp.SplashScreen;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

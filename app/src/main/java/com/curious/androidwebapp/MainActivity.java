@@ -1,13 +1,12 @@
-package com.example.androidwebapp;
+package com.curious.androidwebapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     ProgressBar progressbar;
     WebView webview;
+    public static String USER_AGENT = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +50,14 @@ public class MainActivity extends AppCompatActivity {
         //its fixed let's add progressbar
         webview.loadUrl("https://www.ootsuk.com/");
 
-
+        webview.getSettings().setDomStorageEnabled(true);
+        webview.getSettings().setDatabaseEnabled(true);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
+            webview.getSettings().setDatabasePath("/data/data/" + webview.getContext().getPackageName() + "/databases/");
+        }
+         USER_AGENT = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19";
+        webview.getSettings().setUserAgentString(USER_AGENT);
+        //webview.getSettings().setUserAgentString(webview.getSettings().getUserAgentString().replace("; wv",""));
         //now on back press it exist instead of back page let's fixed it
     }
 

@@ -10,7 +10,7 @@
         <ImageView
             android:padding="5dp"
             android:id="@+id/icon"
-            android:src="@mipmap/ic_launcherl"
+            android:src="@drawable/ic_stat_name"
             android:layout_width="50dp"
             android:layout_height="50dp"/>
     </LinearLayout>

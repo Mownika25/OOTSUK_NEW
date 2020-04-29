@@ -1,4 +1,4 @@
-package com.example.androidwebapp;
+package com.curious.androidwebapp;
 
 import android.content.Context;
 
